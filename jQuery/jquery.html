@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> <!-- jQuery link  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    $(document).ready(function() { // Requests from the DOM the entire document page 
+        $("html").append( // Targets the HTML tag and creates ".append()" to insert content
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>jQuery</h1>\ 
+                        <p id='1'>Test 1</p>\
+                        <p id='2'>Test 2</p>\
+                        <p id='3'>Test 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("#2").css({"color":"red"}); // Adds CSS to paragraph id='2' and changes the color to red.
+        $("#3").click(function() { // Adds ".click(function)" to paragraph id='3'
+            $('h1').hide(); // Adds ".hide()" to h1 element when you click "paragraph id='3'"
+        });
+    });
+</script>
+
+    
+</body>
+</html>
